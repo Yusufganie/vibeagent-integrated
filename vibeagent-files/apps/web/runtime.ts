@@ -1,0 +1,3 @@
+export async function runAgent(spec: any) {
+  return { ok: true, logs: (spec.workflow || []).map((s: any) => 'step:' + s.step) };
+}
