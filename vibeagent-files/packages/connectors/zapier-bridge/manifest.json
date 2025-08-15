@@ -1,0 +1,41 @@
+{
+  "name": "zapier-bridge",
+  "version": "0.1.0",
+  "description": "Bridge to Zapier/NLA style endpoint.",
+  "auth": {
+    "type": "token",
+    "env": [
+      "ZAPIER_TOKEN"
+    ]
+  },
+  "baseUrl": "https://example.zapier.endpoint",
+  "actions": [
+    {
+      "id": "invoke",
+      "title": "Invoke Zapier Action",
+      "method": "POST",
+      "path": "/invoke",
+      "input": {
+        "type": "object",
+        "properties": {
+          "app": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "input": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "app",
+          "action"
+        ]
+      },
+      "output": {
+        "type": "object"
+      }
+    }
+  ]
+}

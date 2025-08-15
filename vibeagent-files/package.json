@@ -1,0 +1,13 @@
+{
+  "name": "vibesense-agents-fullstack",
+  "private": true,
+  "version": "0.2.0",
+  "workspaces": [
+    "apps/web",
+    "packages/runtime",
+    "packages/schema",
+    "packages/registry",
+    "packages/connector-sdk",
+    "packages/connectors"
+  ]
+}

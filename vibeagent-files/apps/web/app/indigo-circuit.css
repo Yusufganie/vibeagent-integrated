@@ -1,0 +1,21 @@
+
+:root {
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --text: #0F172A;
+  --muted: #64748B;
+  --primary: #4F46E5;
+  --secondary: #1E40AF;
+  --accent: #C4B5FD;
+  --code: #EEF2FF;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+
+button.primary { background: var(--primary); color: white; border: none; padding: 12px 16px; border-radius: 10px; font-weight: 700; }
+button.secondary { background: transparent; color: var(--primary); border: 2px solid var(--primary); padding: 10px 14px; border-radius: 10px; font-weight: 700; }
+
+.card { background: var(--surface); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; padding: 16px; }
+code, pre { background: var(--code); border-radius: 12px; padding: 12px; display: block; overflow: auto; }
+footer { color: var(--muted); font-size: 12px; padding: 24px 28px; }

@@ -1,0 +1,1 @@
+import { NextRequest } from 'next/server';export async function POST(req:NextRequest){const{prompt}=await req.json();const spec={name:'Generated Agent',description:prompt,tools:[{id:'http',type:'http'}],workflow:[{step:'call',uses:'http'}],channels:[{type:'web'}]};return Response.json({spec});}
