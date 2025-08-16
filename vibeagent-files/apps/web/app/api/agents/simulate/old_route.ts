@@ -1,0 +1,1 @@
+import { runAgent } from '@vibesense/runtime';export async function POST(req:Request){const{spec}=await req.json();const result=await runAgent(spec);return new Response(JSON.stringify(result),{headers:{'content-type':'application/json'}})}
